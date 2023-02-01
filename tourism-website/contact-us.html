@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Visit Ubatuba</title>
+	<link type="text/css" rel="stylesheet" href="style.css"/>
+	<meta charset="utf-8"/>
+
+			<style>
+				form{
+					width: 30em;
+				
+				}
+				.form-control{
+					margin-bottom: 1em;
+				}
+				textarea{
+					min-height: 10em;
+					
+				}
+
+            	.form-control input, .form-control textarea{
+                	padding: 0.5em;
+            	}
+
+			</style>
+	</head>
+
+	<body>
+
+		<h1>Welcome to Ubatuba</h1>
+	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="beaches.html">Beaches</a></li>
+			<li><a href="tours.html">City tours</a></li>
+			<li><a href="restaurants.html">Restaurants</a></li>
+			<li><a href="hotels.html">Hotels</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li class="selected">Contac us</li>
+
+
+		</ul>
+
+		<div>
+			<form action="">
+		
+		
+				<!--name-->
+				<div class="form-control">
+				<label for="fullname">Your full name</label>
+				<input required id="fullname" type="text" name="fullname" />
+				</div>
+		
+				<!--email address-->
+				<div class="form-control">
+				<label for="email">Your email address</label>
+				<input required id="email" type="email" name="email_address" />
+				</div>
+		
+				<!--age-->
+				<div class="form-control">
+				<label for="age">Your age</Label>
+				<input type="number" name="age" id="age" min="1" max="110">
+				</div>
+		
+				<!--text area-->
+				<div class="form-control">
+				<label for="questions">Your questions</Label>
+				<textarea id="questions" name="questions"></textarea>
+				</div>
+		
+				<!--send botton-->
+				<input type="submit" value="Send" />
+
+		</div>
+		
+			</form>
+		
+
+	</body>
+</html>

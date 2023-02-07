@@ -8,28 +8,36 @@
 			<style>
 				form{
 					width: 30em;
-				
-				}
+					}
+
 				.form-control{
 					margin-bottom: 1em;
-				}
+					}
+
 				textarea{
-					min-height: 10em;
-					
-				}
+					min-height: 10em;	
+					}
 
             	.form-control input, .form-control textarea{
                 	padding: 0.5em;
-            	}
+            		}
+
+				div{
+					color: #22577a
+					}
 
 			</style>
 	</head>
 
 	<body>
 
-		<h1>Welcome to Ubatuba</h1>
-	
-		<ul>
+<!--bellow are the logo-->
+		<a href="index.html">		
+			<img src="logo_ubatuba810x373.png" alt="logo" height="100px"/>
+		</a>
+
+<!--bellow are the menu bar-->	
+		<ul class="nav-bar">
 			<li><a href="index.html">Home</a></li>
 			<li><a href="beaches.html">Beaches</a></li>
 			<li><a href="tours.html">City tours</a></li>
@@ -37,14 +45,13 @@
 			<li><a href="hotels.html">Hotels</a></li>
 			<li><a href="gallery.html">Gallery</a></li>
 			<li class="selected">Contac us</li>
-
-
 		</ul>
+<!--end of menu-->
 
+			<h1>Contact us</h1>
+<!--start of form-->
 		<div>
 			<form action="">
-		
-		
 				<!--name-->
 				<div class="form-control">
 				<label for="fullname">Your full name</label>
@@ -57,10 +64,10 @@
 				<input required id="email" type="email" name="email_address" />
 				</div>
 		
-				<!--age-->
+				<!--country/city-->
 				<div class="form-control">
-				<label for="age">Your age</Label>
-				<input type="number" name="age" id="age" min="1" max="110">
+				<label for="city-country">Your city/country</Label>
+				<input id="name-city" type="city" name="city" />
 				</div>
 		
 				<!--text area-->
@@ -71,11 +78,13 @@
 		
 				<!--send botton-->
 				<input type="submit" value="Send" />
-
 		</div>
-		
 			</form>
-		
+<!--end of form-->		
+
+			<footer>
+				<p>Copyright &copy; 2023 Ubatuba. All rights reserved.</p>
+			</footer>
 
 	</body>
 </html>

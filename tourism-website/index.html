@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>Visit Ubatuba</title>
+	<title>Welcome to Ubatuba</title>
 	<link type="text/css" rel="stylesheet" href="style.css"/>
 	<meta charset="utf-8"/>
+
+
+	<style>
+
+			.carousel {
+                display: flex;
+                overflow: hidden;
+                position: relative;
+            }
+            
+            .carousel img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                animation: slide 2s linear infinite;
+            }
+            
+            @keyframes slide {
+                0% {
+                transform: translateX(100%);
+                }
+                100% {
+                transform: translateX(-100%);
+                }
+             }
+
+	</style>
 	</head>
 
 	<body>
 
-		<h1>Welcome to Ubatuba</h1>
-	
-		<ul>
+	<!--bellow are the logo-->
+		<a href="index.html">		
+		<img src="logo_ubatuba810x373.png" alt="logo" height="100px"/>
+		</a>
+
+		<!--bellow are the menu bar-->
+		<ul class="nav-bar">
 			<li class="selected">Home</li>
 			<li><a href="beaches.html">Beaches</a></li>
 			<li><a href="tours.html">City tours</a></li>
@@ -18,9 +51,30 @@
 			<li><a href="hotels.html">Hotels</a></li>
 			<li><a href="gallery.html">Gallery</a></li>
 			<li><a href="contact-us.html">Contac us</a></li>
-
-
 		</ul>
 
+					<!---bellow are the caroussel of the page home-->
+						<div class="caroussel">
+						<img src="praia-das-conchas.jpg" alt="beach picture" height="100px" width="180px">
+						<img src="praia-das-conchas2.jpg" alt="beach picture" height="100px" width="180px">
+						<img src="conchas-praia-das-conchas.jpg" alt="shell picture" height="100px" width="180px">
+						</div>
+	
+
+		<!--bellow are the intro-->
+		<main>
+			<section id="intro">
+				<h1>About Ubatuba</h1>
+				<p>A Paradise in São Paulo</p>
+				<p>Ubatuba is a city located on the coast of São Paulo, Brazil.</p>
+				<p>It is known for its stunning beaches, rich history, and vibrant atmosphere.</p>
+				<p>With its lush tropical forests and sparkling ocean views, Ubatuba is a popular destination for both tourists and locals alike.</p>
+			</section>
+		</main>
+
+
+			<footer>
+				<p>Copyright &copy; 2023 Ubatuba. All rights reserved.</p>
+			</footer>
 	</body>
 </html>

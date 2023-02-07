@@ -43,6 +43,7 @@ p {
 
 .seleted {
     color: #C7F9CC;
+    
 }
 
 .nav-bar {
@@ -101,9 +102,7 @@ h3 {
     a:hover{
     color: #22577a;
     }
-    a::selection{
-        color:#C7F9CC
-    }
+
 
 /*bellow are the code for the pictures transitions*/
           
